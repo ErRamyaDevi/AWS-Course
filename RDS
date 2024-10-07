@@ -1,0 +1,31 @@
+Why RDS cannot be deployed as dB in an EC2 instance?
+RDS Managed by AWS. In RDS Instance, maintenance, patching, vulnerability,backup. build version are totally taken care by AWS.
+RDS Benefits:
+Highly secure - we are unable to take SSH here which minimizes the hackers intervention.
+Security Groups can be attached manually to enhance security.
+Highly isolated -  One RDS instance can clone any number of DBs and any individual users can be tightly coupled with specific Dbs.
+Multi AZs - Important for production environment.
+automatic snapshots & Backups
+
+RDS proxy - it acts a bridge between an EC2 instance and RDS & handles the request and response.
+Also, proxy closes the connection which remains idle connection with Db.
+I.Q: RDS Intance Base OS - Linux has been installed with MySQL and that dB is serving us as RDS serverless technology.
+I.Q: Within VPC - Private IP should be used for communication and not public IP.
+I.Q: Which End point should be given to an EC2 instance for RDS connection? - We can give RDS Proxy end to an EC2 instance and no need to give RDS end point.
+
+*Explanation of each tab:-*
+Events -> denotes the start,stop,terminate(shut-down) of an instance.
+Event subscription -> denotes those events' notifications to be notified.Also, Maintenance for backup, update notification issued by amazon can also be subscribed here and it gets notifies through e-mail with help of SNS.
+Databases--> our Dbs will be listed here.
+Snapshots --> Manual snapshots and system snapshots (automatic backup taken by Amazon with retention period).
+    Shared with me --> if anyone shares a snapshot it will be shown here
+    Backup services--> we can take for our own purpose.
+    Exports in Amazon S3--> if charges are more in RDS, we can export it to S3 and work.
+Performance Insights: RDS performance will be checked  here.
+subnet group--> min 3 AZ should be selected
+parameter group-->engine type and all
+Option group-->
+
+
+I.Q: What happens if above 3 group not created initially?
+  If it is not created initially, then above groups will be created as default one and parameter group will not be changed later as per our convenience.
