@@ -1,1 +1,16 @@
+RDS- Relational Database Service - It is fully Amazon owned/managed Database service.
+In order to build a database in cloud, we are doing this. MySQL, MariaDB, Oracle,PostgreSQL, Aurora(Amazon's db).
 
+RDS Benefits:-
+Amazon managed service.
+Automatic provisioning
+AWS Backup service - point-in-time restore
+Monitoring RDS from Dashboard
+MultiAZ - Disaster Recovery.(Amazon recommended)
+Maintenance timing
+scaling capability - vertical scaling and Horizontal scaling
+
+I.Q: RDS instance depends on **Linux OS**
+
+AWS Default Automated snapshots --> this can be taken at specific time everyday.
+AWS Backup service - Here, Point-in-time option keeps restoring every changes from time to time which saves us from data loss even when Db is crashed accidentally.
