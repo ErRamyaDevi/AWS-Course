@@ -1,5 +1,6 @@
 ## AWS LAMBDA
-AWS is an event-driven, serverless function as a service provided by Amazon as a part of Amazon web services. It is designed to enable developers to run code without provisioning or managing servers. It executes code in response to events and automatically manages(scales up) the computing resources required by that code.
++ AWS is an event-driven, serverless function as a service provided by Amazon as a part of Amazon web services. It is designed to enable developers to run code without provisioning or managing servers. It executes code in response to events and automatically manages(scales up) the computing resources required by that code.
++ lets you run code without thinking about servers.
  ### Lambda Function:
 ## What is Lambda?
 +	AWS lambda is a serverless function managed by total AWS.
